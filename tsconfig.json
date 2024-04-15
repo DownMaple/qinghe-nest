@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "emitDeclarationOnly": false, // 不仅要生成.js文件也要生成.d.ts文件
+    "declarationMap": true, // 如果需要，可以生成.map文件以支持编辑器的跳转功能
+    "sourceMap": true, // 生成.js.map文件
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "test", "typings/**/*.d.ts"]
+}
